@@ -2,13 +2,13 @@
   {
     "title": "Thriller",
     "artist": "Michael Jackson",
-    "cover_url": "https://upload.wikimedia.org/wikipedia/en/5/55/Michael_Jackson_-_Thriller.png",
+    "cover_url": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/5\/55\/Michael_Jackson_-_Thriller.png",
     "year": 1982,
     "genre": "Pop"
   },
   {
     "title": "Back in Black",
-    "artist": "AC/DC",
+    "artist": "AC\/DC",
     "cover_url": "",
     "year": 1980,
     "genre": "Hard Rock"
@@ -16,7 +16,7 @@
   {
     "title": "The Dark Side of the Moon",
     "artist": "Pink Floyd",
-    "cover_url": "https://upload.wikimedia.org/wikipedia/en/3/3b/Dark_Side_of_the_Moon.png",
+    "cover_url": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/3\/3b\/Dark_Side_of_the_Moon.png",
     "year": 1973,
     "genre": "Progressive Rock"
   },
@@ -30,7 +30,7 @@
   {
     "title": "Rumours",
     "artist": "Fleetwood Mac",
-    "cover_url": "https://upload.wikimedia.org/wikipedia/en/f/fb/FMacRumours.PNG",
+    "cover_url": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/f\/fb\/FMacRumours.PNG",
     "year": 1977,
     "genre": "Soft Rock"
   },
@@ -44,7 +44,7 @@
   {
     "title": "Nevermind",
     "artist": "Nirvana",
-    "cover_url": "https://upload.wikimedia.org/wikipedia/en/b/b7/NirvanaNevermindalbumcover.jpg",
+    "cover_url": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/b\/b7\/NirvanaNevermindalbumcover.jpg",
     "year": 1991,
     "genre": "Grunge"
   },
@@ -65,8 +65,22 @@
   {
     "title": "A Night at the Opera",
     "artist": "Queen",
-    "cover_url": "https://upload.wikimedia.org/wikipedia/en/4/4d/Queen_A_Night_At_The_Opera.png",
+    "cover_url": "https:\/\/upload.wikimedia.org\/wikipedia\/en\/4\/4d\/Queen_A_Night_At_The_Opera.png",
     "year": 1975,
     "genre": "Rock"
+  },
+  {
+    "title": "Divide",
+    "artist": "Ed Sheeran",
+    "year": "2017",
+    "cover_url": "https:\/\/ecshivers.wordpress.com\/wp-content\/uploads\/2017\/01\/ed-sheeran-c3b7-2017-promo.jpg",
+    "genre": "Pop"
+  },
+  {
+    "title": "A Place We Knew",
+    "artist": "Dean Lewis",
+    "year": "2019",
+    "cover_url": "",
+    "genre": "Pop"
   }
 ]

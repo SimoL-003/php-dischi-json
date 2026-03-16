@@ -1,5 +1,8 @@
 <?php
-require_once './script.php';
+// Get content of json file
+$disksString = file_get_contents('./disks.json');
+// Convert json string to php array
+$disksArray = json_decode($disksString, true);
 ?>
 
 <!DOCTYPE html>
@@ -17,13 +20,21 @@ require_once './script.php';
     <main>
         <section class="min-h-screen bg-stone-50 py-16 px-6">
             <div class="max-w-7xl mx-auto">
-                <h1 class="text-4xl font-light tracking-widest text-stone-800 uppercase mb-12">Disks</h1>
+                <div class="flex items-center justify-between mb-12">
+                    <h1 class="text-4xl font-light tracking-widest text-stone-800 uppercase">Disks</h1>
+
+                    <!-- Link to Add film page -->
+                    <a href="./add-film.php"
+                       class="text-sm tracking-widest uppercase text-stone-500 hover:text-stone-800 transition-colors duration-300">
+                        + Add film
+                    </a>
+                </div>
 
                 <!-- CARDS GRID -->
-                <div class="grid group grid-cols-1 gr sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
                     <?php
-                    foreach ($disks_array as $disk) {
-                        $image = strlen($disk['cover_url']) > 0 ? $disk['cover_url'] : 'https://placehold.co/400?text=No+Cover';
+                    foreach ($disksArray as $disk) {
+                        $image = strlen($disk['cover_url']) > 0 ? $disk['cover_url'] : "https://placehold.co/400?text={$disk['title']}";
 
                         echo "
                             <div class='border border-stone-200 rounded-sm'>
