@@ -1,9 +1,7 @@
 <?php
-// Get content of json file
-$disksString = file_get_contents('./disks.json');
-// Convert json string to php array
-$disksArray = json_decode($disksString, true);
-?>
+require_once './functions.php';
+$disks = getArray('./disks.json')
+    ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -33,7 +31,7 @@ $disksArray = json_decode($disksString, true);
                 <!-- CARDS GRID -->
                 <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
                     <?php
-                    foreach ($disksArray as $disk) {
+                    foreach ($disks as $disk) {
                         $image = strlen($disk['cover_url']) > 0 ? $disk['cover_url'] : "https://placehold.co/400?text={$disk['title']}";
 
                         echo "
