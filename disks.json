@@ -9,7 +9,7 @@
   {
     "title": "Back in Black",
     "artist": "AC/DC",
-    "cover_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/ACDC_Back_in_Black.jpg/220px-ACDC_Back_in_Black.jpg",
+    "cover_url": "",
     "year": 1980,
     "genre": "Hard Rock"
   },
@@ -23,7 +23,7 @@
   {
     "title": "Abbey Road",
     "artist": "The Beatles",
-    "cover_url": "https://upload.wikimedia.org/wikipedia/en/4/42/Beatles_-_Abbey_Road.jpg",
+    "cover_url": "",
     "year": 1969,
     "genre": "Rock"
   },
@@ -37,7 +37,7 @@
   {
     "title": "Kind of Blue",
     "artist": "Miles Davis",
-    "cover_url": "https://upload.wikimedia.org/wikipedia/en/9/9c/MilesDavisKindofBlue.jpg",
+    "cover_url": "",
     "year": 1959,
     "genre": "Jazz"
   },
@@ -51,14 +51,14 @@
   {
     "title": "Random Access Memories",
     "artist": "Daft Punk",
-    "cover_url": "https://upload.wikimedia.org/wikipedia/en/a/a7/Random_Access_Memories.jpg",
+    "cover_url": "",
     "year": 2013,
     "genre": "Electronic"
   },
   {
     "title": "Dangerous",
     "artist": "Michael Jackson",
-    "cover_url": "https://upload.wikimedia.org/wikipedia/en/9/97/Michael_Jackson_-_Dangerous.png",
+    "cover_url": "",
     "year": 1991,
     "genre": "Pop"
   },

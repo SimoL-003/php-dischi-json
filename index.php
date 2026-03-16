@@ -10,36 +10,35 @@ require_once './script.php';
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
     <title>Disks List</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-          crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body>
     <main>
-        <section class="py-5 bg-dark text-white">
-            <div class="container">
-                <h1 class="mb-4 fw-bold">Disks</h1>
+        <section class="min-h-screen bg-stone-50 py-16 px-6">
+            <div class="max-w-7xl mx-auto">
+                <h1 class="text-4xl font-light tracking-widest text-stone-800 uppercase mb-12">Disks</h1>
+
                 <!-- CARDS GRID -->
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+                <div class="grid group grid-cols-1 gr sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6">
                     <?php
                     foreach ($disks_array as $disk) {
-                        // Card
+                        $image = strlen($disk['cover_url']) > 0 ? $disk['cover_url'] : 'https://placehold.co/400?text=No+Cover';
+
                         echo "
-                            <div class='col'>
-                                <div class='card h-100 bg-secondary border-0 shadow'>
-                                    <img src='{$disk['cover_url']}'
-                                        class='card-img-top object-fit-cover'
-                                        style='height: 220px;'
-                                        alt='{$disk['title']}'>
-                                    <div class='card-body'>
-                                        <h5 class='card-title fw-bold mb-1'>{$disk['title']}</h5>
-                                        <p class='card-text text-white-50 mb-2'>{$disk['artist']}</p>
-                                        <div class='d-flex gap-2'>
-                                            <span class='badge bg-dark'>{$disk['year']}</span>
-                                            <span class='badge bg-primary'>{$disk['genre']}</span>
-                                        </div>
+                            <div class='border border-stone-200 rounded-sm'>
+                                <div class='overflow-hidden rounded-t-sm mb-3'>
+                                    <img src='$image'
+                                        alt='{$disk['title']}'
+                                        class='w-full aspect-square object-cover'>
+                                </div>
+                                <div class='px-3 pb-2 rounded-sm'>
+                                    <h3 class='text-sm font-semibold text-stone-800 truncate'>{$disk['title']}</h3>
+                                    <p class='text-sm text-stone-400 truncate mb-2'>{$disk['artist']}</p>
+                                    <div class='flex items-center gap-2'>
+                                        <span class='text-xs text-stone-400'>{$disk['year']}</span>
+                                        <span class='text-stone-300'>·</span>
+                                        <span class='text-xs text-stone-400 truncate'>{$disk['genre']}</span>
                                     </div>
                                 </div>
                             </div>";
@@ -48,7 +47,6 @@ require_once './script.php';
                 </div>
             </div>
         </section>
-
     </main>
 </body>
 
